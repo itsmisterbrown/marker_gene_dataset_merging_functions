@@ -7,3 +7,9 @@ within the phyloseq package. If count data are desired, relative abundances can 
 count data based on either the geometric mean read count or the median read count of all datasets merged. 
 This is done by calculating the respective value, multiplying that statistic by the number of datasets merged, 
 and then dividing that value by the total number of samples in the merged dataset.
+
+for standardizing to the geometric mean read count per sample, use the parameter __standardization="geomeans"__  
+</br>
+for standardizing to the median read count per sample, use the parameter __standardization="median"__  
+</br>
+for a relative abundance-transformed dataset (default), use the parameter __standardization="relative"__ or leave blank
